@@ -1,14 +1,5 @@
 {
-    const tasks = [
-        {
-            content: "something1",
-            done: true,
-        },
-        {
-            content: "something2",
-            done: false,
-        }
-    ];
+    const tasks = [];
 
     const addNewTask = (newTaskContent) => {
         tasks.push({ content: newTaskContent });
@@ -75,8 +66,6 @@
     };
 
     const init = () => {
-        render();
-
         const form = document.querySelector(".js-form");
 
         form.addEventListener("submit", onFormSubmit);
