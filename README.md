@@ -1,2 +1,2 @@
 # todo-list
-LIVE:  https://stolar-code.github.io/to-do-list/
+LIVE:  https://stolar-code.github.io/todo-list/
