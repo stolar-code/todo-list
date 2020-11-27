@@ -24,6 +24,7 @@
 }
 
 .list__button {
+    font-size: 20px;
     background-color: inherit;
     border: none;
     cursor: pointer;
@@ -33,6 +34,14 @@
     color: crimson
 }
 
+.list__button--remove:hover {
+    color: red;
+}
+
 .list__button--done {
-    color: green
+    color: green;
+}
+
+.list__button--done:hover {
+    color: rgb(2, 155, 2)
 }
