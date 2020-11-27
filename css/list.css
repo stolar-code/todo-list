@@ -1,3 +1,38 @@
-.list__item--special {
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    padding: 0 25px 60px;
+}
+
+.list__item {
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    border-bottom: 1px solid #dddddd;
+}
+
+.list__content {
+    margin: 0 20px;
+    flex-basis: 100%;
+    overflow-wrap: anywhere;
+}
+
+.list__content--special {
     text-decoration: line-through;
+}
+
+.list__button {
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+.list__button--remove {
+    color: crimson
+}
+
+.list__button--done {
+    color: green
 }

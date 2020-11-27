@@ -1,0 +1,30 @@
+.form {
+    padding: 25px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form__input {
+    border: 2px solid #dddddd;
+    padding: 10px;
+    flex: 1;
+}
+
+.form__button {
+    cursor: pointer;
+    margin-left: 10px;
+    color: white;
+    background-color: hsl(180, 100%, 25%);
+    padding: 12px 20px;
+    border: none;
+    flex: 1, 0;
+}
+
+.form__button:hover {
+    background-color: hsl(180, 100%, 27%);
+}
+
+.form__button:active {
+    background-color: hsl(180, 100%, 30%);
+}
