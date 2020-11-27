@@ -57,6 +57,7 @@
         event.preventDefault();
 
         const newTaskContent = document.querySelector(".js-newTask").value.trim();
+        document.querySelector(".js-newTask").focus()
 
         if (newTaskContent) {
             document.querySelector(".js-newTask").value = "";
