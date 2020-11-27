@@ -28,3 +28,10 @@
 .form__button:active {
     background-color: hsl(180, 100%, 30%);
 }
+
+@media (max-width: 767px) {
+    .form__button {
+        margin: 5px 0;
+        flex-basis: 100%;
+    }
+}
