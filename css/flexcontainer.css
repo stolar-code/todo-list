@@ -1,0 +1,16 @@
+.flexcontainer {
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid #edecee;
+}
+
+.flexcontainer__header {
+    flex-shrink: 0;
+    margin-right: auto;
+}
+
+.flexcontainer__button {
+    margin-right: 20px;
+    color: teal;
+    background-color: initial;
+}
