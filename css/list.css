@@ -40,10 +40,10 @@
 }
 
 .list__button--done {
-    color: green;
+    color: teal;
 }
 
 .list__button--done-js {
     color: #fefefe;
-    background-color: rgb(14, 117, 14);
+    background-color: teal;
 }
