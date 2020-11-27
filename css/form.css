@@ -3,6 +3,7 @@
     margin-bottom: 15px;
     display: flex;
     flex-wrap: wrap;
+    border-top: 3px solid #edecee;
 }
 
 .form__input {
@@ -12,13 +13,10 @@
 }
 
 .form__button {
-    cursor: pointer;
     margin-left: 10px;
     color: white;
     background-color: hsl(180, 100%, 25%);
     padding: 12px 20px;
-    border: none;
-    flex: 1, 0;
 }
 
 .form__button:hover {
