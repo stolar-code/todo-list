@@ -24,6 +24,7 @@
 }
 
 .list__button {
+    padding: 2px 4px;
     font-size: 20px;
     background-color: inherit;
     border: none;
@@ -42,6 +43,7 @@
     color: green;
 }
 
-.list__button--done:hover {
-    color: rgb(2, 155, 2)
+.list__button--done-js {
+    color: #fefefe;
+    background-color: rgb(14, 117, 14);
 }
