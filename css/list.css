@@ -17,6 +17,16 @@
     overflow-wrap: anywhere;
 }
 
+
+@media (max-width: 767px) {
+    .list__item {
+        justify-content: space-between;
+    }
+    .list__content {
+        flex-basis: auto;
+    }
+}
+
 .list__content--special {
     text-decoration: line-through;
 }

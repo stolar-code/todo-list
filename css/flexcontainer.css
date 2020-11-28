@@ -14,3 +14,13 @@
     color: teal;
     background-color: initial;
 }
+
+@media (max-width: 767px) {
+    .flexcontainer {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .flexcontainer__button {
+        margin: 0 0 15px 0;
+    }
+}

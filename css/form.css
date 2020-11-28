@@ -2,7 +2,6 @@
     padding: 25px;
     margin-bottom: 15px;
     display: flex;
-    flex-wrap: wrap;
     border-top: 3px solid #edecee;
 }
 
@@ -28,8 +27,11 @@
 }
 
 @media (max-width: 767px) {
+    .form {
+        flex-wrap: wrap;
+    }
     .form__button {
-        margin: 5px 0;
+        margin: 5px 0 0;
         flex-basis: 100%;
     }
 }
