@@ -4,7 +4,43 @@
     const addNewTask = (newTaskContent) => {
         tasks.push({ content: newTaskContent });
 
+        document.querySelector(".js-newTask").value = "";
+
         render();
+    };
+
+    const markAllTasks = () => {
+        for (const task of tasks) {
+            switch (!task.done) {
+                case true:
+                    task.done = !task.done;
+                    break;
+                case false:
+                    task.done = true;
+                    break;
+            }
+        }
+
+        render();
+    };
+
+    const deleteAllTasks = () => {
+        tasks.splice(0, tasks.length);
+        render();
+    };
+
+    const bindEventsSection = () => {
+        const doneAllButton = document.querySelector(".js-doneAll")
+
+        doneAllButton.addEventListener("click", () => {
+            markAllTasks();
+        })
+
+        const deleteAllButton = document.querySelector(".js-deleteAll")
+
+        deleteAllButton.addEventListener("click", () => {
+            deleteAllTasks();
+        })
     };
 
     const toggleTasksDone = (index) => {
@@ -19,7 +55,7 @@
         render();
     };
 
-    const bindEvents = () => {
+    const bindEventsList = () => {
         const removeButtons = document.querySelectorAll(".js-remove");
 
         removeButtons.forEach((removeButton, index) => {
@@ -50,7 +86,7 @@
 
         document.querySelector(".js-tasks").innerHTML = htmlString;
 
-        bindEvents();
+        bindEventsList();
     };
 
     const onFormSubmit = (event) => {
@@ -59,10 +95,7 @@
         const newTaskContent = document.querySelector(".js-newTask").value.trim();
         document.querySelector(".js-newTask").focus()
 
-        if (newTaskContent) {
-            document.querySelector(".js-newTask").value = "";
-        }
-        else {
+        if (!newTaskContent) {
             return;
         };
 
@@ -73,6 +106,8 @@
         const form = document.querySelector(".js-form");
 
         form.addEventListener("submit", onFormSubmit);
+
+        bindEventsSection();
     };
 
     init();
