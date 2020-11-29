@@ -19,4 +19,4 @@ For me in this project the main role was manipulating with arrays and using some
  3. If you want to delete task, click on cross icon or click on "Delete all" which will delete your all tasks.
  4. You can cross out all your tasks by clicking on "Mark all as done", if you want to undo cross out the task click on green box on left side of task.
  
-[![toDoList.gif](https://i.postimg.cc/3xmRQQ7K/toDoList.gif)](https://postimg.cc/cv1Zfjrj)
+[![toDoList.gif](https://i.postimg.cc/rpdL2S55/toDoList.gif)](https://postimg.cc/3yHqg0Sw)
