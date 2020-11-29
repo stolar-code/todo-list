@@ -1,5 +1,5 @@
 # To-do List
-LIVE: [https://stolar-code.github.io/todo-list/](https://stolar-code.github.io/todo-list/)
+LIVE: [https://stolar-code.github.io/to-do-list/](https://stolar-code.github.io/to-do-list/)
 ## Description
 I made this project to practice some programming by using **HTML, CSS and JavaScript**. 
 For me in this project the main role was manipulating with arrays and using some new methods that's I have learned. 
