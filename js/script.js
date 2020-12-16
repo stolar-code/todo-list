@@ -13,16 +13,10 @@
     };
 
     const markAllTasks = () => {
-        for (const task of tasks) {
-            switch (!task.done) {
-                case true:
-                    task.done = !task.done;
-                    break;
-                case false:
-                    task.done = true;
-                    break;
-            }
-        }
+        tasks = tasks.map((task) => ({
+            ...task,
+            done: true,
+        }));
 
         render();
     };
