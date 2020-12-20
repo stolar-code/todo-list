@@ -15,6 +15,11 @@
     background-color: initial;
 }
 
+.flexcontainer__button:disabled {
+    cursor: default;
+    color: #b1b1b1
+}
+
 @media (max-width: 767px) {
     .flexcontainer {
         flex-direction: column;
