@@ -15,13 +15,13 @@
 
     const bindButtonsEventsSection = () => {
         if (tasks) {
-            const doneAllButton = document.querySelector(".js-doneAll")
+            const doneAllButton = document.querySelector(".js-doneAll");
 
             doneAllButton.addEventListener("click", () => {
                 markAllTasks();
             });
 
-            const toggleHideShowDoneTasksButton = document.querySelector(".js-toggleHideShowDoneTasks")
+            const toggleHideShowDoneTasksButton = document.querySelector(".js-toggleHideShowDoneTasks");
 
             toggleHideShowDoneTasksButton.addEventListener("click", () => {
                 toggleHideShowDoneTasks();
@@ -97,7 +97,7 @@
 
     const renderButtons = () => {
         if (tasks) {
-            const buttonsSectionContainer = document.querySelector(".js-buttonsSectionContainer")
+            const buttonsSectionContainer = document.querySelector(".js-buttonsSectionContainer");
 
             buttonsSectionContainer.innerHTML = `
             <button class="button flexcontainer__button js-toggleHideShowDoneTasks">${hideShowDoneTasks ? "Show done tasks" : "Hide done tasks"}</button>
