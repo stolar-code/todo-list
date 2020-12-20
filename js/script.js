@@ -21,23 +21,12 @@
         render();
     };
 
-    const deleteAllTasks = () => {
-        tasks = [];
-
-        render();
-    };
 
     const bindEventsSection = () => {
         const doneAllButton = document.querySelector(".js-doneAll")
 
         doneAllButton.addEventListener("click", () => {
             markAllTasks();
-        })
-
-        const deleteAllButton = document.querySelector(".js-deleteAll")
-
-        deleteAllButton.addEventListener("click", () => {
-            deleteAllTasks();
         })
     };
 
