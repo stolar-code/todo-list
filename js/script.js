@@ -87,7 +87,7 @@
         for (const task of tasks) {
             htmlString += `
             <li class="list__item ${hideShowDoneTasks && task.done ? "list__item--hidden" : ""}">
-            <button class="button list__button list__button--done js-done ${task.done ? "list__button--done-js" : ""}"><i class="fas fa-check"></i></button><span class="list__content ${task.done ? "list__content--special" : ""}">${task.content}</span><button class="button list__button list__button--remove js-remove"><i class="fas fa-times"></i></button>
+            <button class="list__button list__button--done js-done ${task.done ? "list__button--done-js" : ""}"><i class="fas fa-check"></i></button><span class="list__content ${task.done ? "list__content--special" : ""}">${task.content}</span><button class="list__button list__button--remove js-remove"><i class="fas fa-times"></i></button>
             </li>
             `
         };
@@ -100,8 +100,8 @@
             const buttonsSectionContainer = document.querySelector(".js-buttonsSectionContainer");
 
             buttonsSectionContainer.innerHTML = `
-            <button class="button flexcontainer__button js-toggleHideShowDoneTasks">${hideShowDoneTasks ? "Show done tasks" : "Hide done tasks"}</button>
-            <button class="button flexcontainer__button js-doneAll"${tasks.every(({ done }) => done) ? "disabled" : ""}>Mark all as done</button>
+            <button class="section__button js-toggleHideShowDoneTasks">${hideShowDoneTasks ? "Show done tasks" : "Hide done tasks"}</button>
+            <button class="section__button js-doneAll"${tasks.every(({ done }) => done) ? "disabled" : ""}>Mark all as done</button>
             `
         };
     };

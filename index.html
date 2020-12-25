@@ -12,8 +12,6 @@
     <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="css/list.css">
     <link rel="stylesheet" href="css/container.css">
-    <link rel="stylesheet" href="css/flexcontainer.css">
-    <link rel="stylesheet" href="css/button.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" />
@@ -24,26 +22,30 @@
 </head>
 
 <body>
-    <div class="container">
+    <main class="container">
         <header>
             <h1>To-do List</h1>
         </header>
         <section class="section">
             <h2 class="section__header">Add new task</h2>
-            <form class="form js-form">
-                <input class="form__input js-newTask" placeholder="What should I do today?">
-                <button class="button form__button">Add task</button>
-            </form>
+            <div class="section__body">
+                <form class="form js-form">
+                    <input class="form__input js-newTask" placeholder="What should I do today?">
+                    <button class="form__button">Add task</button>
+                </form>
+            </div>
         </section>
         <section class="section">
-            <div class="flexcontainer">
-                <h2 class="section__header flexcontainer__header">Task List</h2>
-                <div class=" flexcontainer js-buttonsSectionContainer">
+            <div class="section__container">
+                <h2 class="section__header">Task List</h2>
+                <div class="section__buttonsContainer js-buttonsSectionContainer">
                 </div>
             </div>
-            <ul class="list js-tasks"></ul>
+            <div class="section__body">
+                <ul class="list js-tasks"></ul>
+            </div>
         </section>
-    </div>
+    </main>
 </body>
 
 </html>

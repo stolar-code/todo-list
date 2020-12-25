@@ -1,8 +1,0 @@
-.button {
-    cursor: pointer;
-    border: none;
-}
-
-.button:focus {
-    outline: 1px solid black;   
-}

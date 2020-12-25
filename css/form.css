@@ -1,25 +1,24 @@
 .form {
-    padding: 25px;
-    margin-bottom: 15px;
-    display: flex;
-    border-top: 3px solid #edecee;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 10px
 }
 
 .form__input {
     border: 2px solid #dddddd;
     padding: 10px;
-    flex: 1;
 }
 
 .form__button {
-    margin-left: 10px;
+    cursor: pointer;
+    border: none;
     color: white;
     background-color: hsl(180, 100%, 25%);
-    padding: 12px 20px;
+    padding: 10px 15px;
 }
 
 .form__button:hover {
-    background-color: hsl(180, 100%, 27%);
+    background-color: hsl(180, 100%, 27.5%);
 }
 
 .form__button:active {
@@ -28,10 +27,6 @@
 
 @media (max-width: 767px) {
     .form {
-        flex-wrap: wrap;
-    }
-    .form__button {
-        margin: 5px 0 0;
-        flex-basis: 100%;
+        grid-template-columns: 1fr;
     }
 }

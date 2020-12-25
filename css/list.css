@@ -1,13 +1,15 @@
 .list {
     list-style: none;
     margin: 0;
-    padding: 0 25px 60px;
+    padding: 0;
 }
 
 .list__item {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 20px;
+    padding: 20px;
     align-items: center;
-    padding: 25px;
     border-bottom: 1px solid #dddddd;
 }
 
@@ -16,18 +18,12 @@
 }
 
 .list__content {
-    margin: 0 20px;
-    flex-basis: 100%;
     overflow-wrap: anywhere;
 }
 
-
 @media (max-width: 767px) {
-    .list__item {
-        justify-content: space-between;
-    }
     .list__content {
-        flex-basis: auto;
+        justify-self: center;
     }
 }
 
@@ -36,6 +32,8 @@
 }
 
 .list__button {
+    cursor: pointer;
+    border: none;
     padding: 3px 5px;
     font-size: 20px;
     background-color: inherit;
