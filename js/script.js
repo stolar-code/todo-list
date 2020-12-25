@@ -26,6 +26,12 @@
             toggleHideShowDoneTasksButton.addEventListener("click", () => {
                 toggleHideShowDoneTasks();
             });
+
+            const deleteAllButton = document.querySelector(".js-deleteAll");
+
+            deleteAllButton.addEventListener("click", () => {
+                deleteAllTasks();
+            })
         };
     };
 
@@ -40,6 +46,12 @@
 
     const toggleHideShowDoneTasks = () => {
         hideShowDoneTasks = !hideShowDoneTasks;
+
+        render();
+    };
+
+    const deleteAllTasks = () => {
+        tasks = [];
 
         render();
     };
@@ -102,6 +114,7 @@
             buttonsSectionContainer.innerHTML = `
             <button class="section__button js-toggleHideShowDoneTasks">${hideShowDoneTasks ? "Show done tasks" : "Hide done tasks"}</button>
             <button class="section__button js-doneAll"${tasks.every(({ done }) => done) ? "disabled" : ""}>Mark all as done</button>
+            <button class="section__button js-deleteAll">Delete all</button>
             `
         };
     };
