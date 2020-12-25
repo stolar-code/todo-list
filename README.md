@@ -10,13 +10,16 @@ For me in this project the main role was manipulating with arrays and using some
 ###  Methotology
  - BEM
 
+### Conventions 
+- immutability 
 ### Libraries
  - normalize.css
  - fontAwesome
 ## How to use it?
- 1. Type your task in input then click on "Add task".
- 2. After you done that you can click on check icon to cross this task out.
- 3. If you want to delete task, click on cross icon or click on "Delete all" which will delete your all tasks.
- 4. You can cross out all your tasks by clicking on "Mark all as done", if you want to undo cross out the task click on green box on left side of task.
+ 1. Type your task in input then click enter or on "Add task".
+ 2. After you done your task click on check icon to cross this task out.
+ 3. You can hide done tasks by clicking on "Hide done tasks".
+ 4. If you want to delete task, click on cross icon or click on "Delete all" which will delete your all tasks even hidden ones.
+ 5. You can cross out all your tasks by clicking on "Mark all as done", if you want to undo cross out the task click on green box on left side of task.
  
-[![toDoList.gif](https://i.postimg.cc/rpdL2S55/toDoList.gif)](https://postimg.cc/3yHqg0Sw)
+[![toDoList.gif](https://i.postimg.cc/YSV4WHH4/toDoList.gif)](https://postimg.cc/ns4VyNMZ)
